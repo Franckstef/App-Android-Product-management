@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/idList"
+        style="@style/editText"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/nomList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomList"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/idList"
+        app:layout_constraintEnd_toStartOf="@+id/categorieList"
+        app:layout_constraintStart_toEndOf="@id/idList" />
+
+    <TextView
+        android:id="@+id/categorieList"
+        style="@style/editText"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nomList"
+        app:layout_constraintEnd_toStartOf="@+id/prixList"
+        app:layout_constraintStart_toEndOf="@id/nomList" />
+
+    <TextView
+        android:id="@+id/prixList"
+        style="@style/editText"
+        android:hint="$"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/categorieList"
+        app:layout_constraintEnd_toStartOf="@+id/qteList" />
+
+    <TextView
+        android:id="@+id/qteList"
+        style="@style/editText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/prixList"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

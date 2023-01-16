@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <item>
+                <shape>
+                    android:id="@+id/borderBlack"
+                    <stroke android:width="2dp" android:color="#000000" />
+                    <solid android:color="#E7E7E7" />
+                    <corners android:radius="5dp" />
+                    <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/arrow1_foreground" android:gravity="end" />
+        </layer-list>
+    </item>
+</selector>
